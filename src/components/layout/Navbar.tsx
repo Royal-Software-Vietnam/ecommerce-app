@@ -1,12 +1,12 @@
 import React from "react";
-import Search from "../Search";
+import Search from "./Search";
 import Image from "next/image";
 
 const navItems = [
-  { name: "Hàng nóng", path: "/hots" },
-  { name: "Quà tặng", path: "/gifts" },
-  { name: "Giảm giá", path: "/sales" },
-  { name: "Free ship", path: "/freeships" },
+  { name: "Hàng nóng", path: "/" },
+  { name: "Quà tặng", path: "/" },
+  { name: "Giảm giá", path: "/" },
+  { name: "Free ship", path: "/" },
 ];
 
 function Navbar() {

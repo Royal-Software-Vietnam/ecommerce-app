@@ -15,19 +15,19 @@ const listCategory = [
 
 const listItems = [
   { title: "Đồng hồ điện tử", price: "300.000", svg: "/item-1.svg" },
-  { title: "Máy ảnh", price: "1.000.000", svg: "/item-1.svg" },
-  { title: "Tai nghe", price: "500.000", svg: "/item-1.svg" },
-  { title: "Đồ gia dụng", price: "100.000", svg: "/item-1.svg" },
-  { title: "Phụ kiện", price: "200.000", svg: "/item-1.svg" },
-  { title: "Laptops & PC", price: "4.000.000", svg: "/item-1.svg" },
-  { title: "Máy tính bảng", price: "2.000.000", svg: "/item-1.svg" },
-  { title: "Điện thoại", price: "2.000.000", svg: "/item-1.svg" },
+  { title: "Máy ảnh", price: "1.000.000", svg: "/item-2.svg" },
+  { title: "Tai nghe", price: "500.000", svg: "/item-3.svg" },
+  { title: "Đồ gia dụng", price: "100.000", svg: "/item-4.svg" },
+  { title: "Phụ kiện", price: "200.000", svg: "/item-5.svg" },
+  { title: "Laptops & PC", price: "4.000.000", svg: "/item-6.svg" },
+  { title: "Máy tính bảng", price: "2.000.000", svg: "/item-7.svg" },
+  { title: "Điện thoại", price: "2.000.000", svg: "/item-8.svg" },
 ]
 
 const listSuggestions = [
   { description: "Áo cộc tay thương hiệu Coolmate", price: "300.000", svg: "/suggestion-1.svg" },
-  { description: "Áo ấm dành cho mùa đông lạnh giá", price: "1.000.000", svg: "/suggestion-1.svg" },
-  { description: "Suit nam cao cấp đến từ thương hiệu Việt", price: "500.000", svg: "/suggestion-1.svg" },
+  { description: "Áo ấm dành cho mùa đông lạnh giá", price: "1.000.000", svg: "/suggestion-2.svg" },
+  { description: "Suit nam cao cấp đến từ thương hiệu Việt", price: "500.000", svg: "/suggestion-3.svg" },
   { description: "Ví da bò nhưng được làm từ nhựa tổng hợp", price: "100.000", svg: "/suggestion-1.svg" },
   { description: "Balo cho học sinh hoặc du lịch", price: "200.000", svg: "/suggestion-1.svg" },
   { description: "Quần đùi nam mùa hè mặc vào hơi nóng", price: "4.000.000", svg: "/suggestion-1.svg" },
@@ -54,7 +54,7 @@ export default function Home() {
             <ul>
               {listCategory.map((item, index) => (
                 <a key={index} href={item.path} className="group hover:no-underline">
-                  <li className="py-1.5 px-2 text-xl text-[#505050] group-hover:bg-[#E5F1FF] group-hover:text-[#1C1C1C] group-hover:font-semibold rounded-lg">
+                  <li className="py-1.5 px-4 text-xl text-[#505050] group-hover:bg-[#E5F1FF] group-hover:text-[#1C1C1C] group-hover:font-semibold rounded-lg">
                     {item.name}
                   </li>
                 </a>

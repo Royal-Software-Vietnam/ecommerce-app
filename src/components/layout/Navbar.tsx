@@ -50,7 +50,7 @@ function Navbar() {
         <div>
           <ul className="flex items-start">
             {navItems.map((item, index) => (
-              <a className="text-[#1C1C1C]" key={index} href={item.name}>
+              <a className="text-[#1C1C1C]" key={index} href={item.path}>
                 <li className="px-4 ">{item.name}</li>
               </a>
             ))}

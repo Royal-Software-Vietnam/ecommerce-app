@@ -2,7 +2,7 @@ import React from 'react'
 import Navbar from './home/Navbar'
 import Footer from './home/Footer'
 
-function Page({children}:{children: React.ReactNode}) {
+function Layout({children}:{children: React.ReactNode}) {
   return (
     <main>
         <Navbar/>
@@ -12,4 +12,4 @@ function Page({children}:{children: React.ReactNode}) {
   )
 }
 
-export default Page
+export default Layout

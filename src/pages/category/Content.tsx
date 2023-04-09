@@ -19,12 +19,12 @@ const listItems = [
 function Content() {
   return (
     <div className="w-full">
-        <div className="w-full flex border border-gray-300 border-solid border-1px my-6 p-6 rounded-lg">
+        <div className="w-full flex border border-gray-300 border-solid border-1px my-6 p-6 rounded-lg bg-[#FFFFFF]">
             <p className="text-[#1C1C1C]">Số lượng sản phẩm: </p>
         </div>
         <div className="flex flex-col w-full h-[80vh] flex overflow-y-auto scroll">
             {listItems.map((item, index) => (
-                <div key={index} className="relative w-full h-[230px] flex border border-gray-300 border-solid border-1px rounded-lg mb-4 p-4">
+                <div key={index} className="relative w-full h-[230px] flex border border-gray-300 border-solid border-1px rounded-lg mb-4 p-4 bg-[#FFFFFF]">
                     <div>
                         <img src={item.svg} alt="" />
                     </div>

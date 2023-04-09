@@ -4,7 +4,7 @@ import Content from './Content'
 
 function index() {
   return (
-    <div className="flex w-full px-[6.8%]">
+    <div className="flex w-full px-[6.8%] bg-gray-200">
         <LeftSide />
         <Content />
     </div>

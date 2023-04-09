@@ -1,6 +1,7 @@
 import React from "react";
 import Search from "./Search";
 import Image from "next/image";
+import Link from "next/link";
 
 const navItems = [
   { name: "Hàng nóng", path: "/" },
@@ -14,15 +15,15 @@ function Navbar() {
     <div>
       <Search />
       <div className="flex items-center justify-center absolute top-6 right-[7%]">
-        <a href="/" className="flex flex-col items-center px-4 justify-center text-sm">
+        <Link href="/" className="flex flex-col items-center px-4 justify-center text-sm">
           <img className="mb-2" src="/user.svg" alt="" />
           Người dùng
-        </a>
+        </Link>
 
-        <a href="/cart" className="flex flex-col items-center px-4 justify-center text-sm">
+        <Link href="/cart" className="flex flex-col items-center px-4 justify-center text-sm">
           <img className="mb-2" src="/cart.svg" alt="" />
           Giỏ hàng
-        </a>
+        </Link>
       </div>
       <div className="flex w-full justify-between border border-gray-300 border-solid border-1px py-4 px-[6.8%]">
         <div className="flex items-center text-[#1C1C1C]">
@@ -32,9 +33,9 @@ function Navbar() {
         <div>
           <ul className="flex items-start">
             {navItems.map((item, index) => (
-              <a className="text-[#1C1C1C]" key={index} href={item.path}>
+              <Link className="text-[#1C1C1C]" key={index} href={item.path}>
                 <li className="px-4 ">{item.name}</li>
-              </a>
+              </Link>
             ))}
             <li className="flex px-4">
               <a className="text-[#1C1C1C] mr-2" href="/more">

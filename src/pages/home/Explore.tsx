@@ -1,5 +1,7 @@
 import React from "react";
 import ExtraExplore from "./ExtraExplore";
+import Link from "next/link";
+import Image from "next/image";
 
 const listItems = [
   { name: "Điện thoại di động", path: "/category" },
@@ -21,7 +23,7 @@ function Explore() {
         <div className="col-span-1 flex flex-col justify-between">
           <ul>
             {listItems.map((item, index) => (
-              <a
+              <Link
                 key={index}
                 href={item.path}
                 className="group hover:no-underline"
@@ -29,7 +31,7 @@ function Explore() {
                 <li className="py-1.5 px-4 text-xl text-[#505050] group-hover:bg-[#E5F1FF] group-hover:text-[#1C1C1C] group-hover:font-semibold rounded-lg">
                   {item.name}
                 </li>
-              </a>
+              </Link>
             ))}
           </ul>
         </div>

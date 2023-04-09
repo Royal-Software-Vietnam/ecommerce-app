@@ -13,11 +13,11 @@ const listItems = [
 
 function ExtraExplore() {
   return (
-    <div className="container h-full flex flex-wrap bg-[#FFFFFF]">
+    <div className="container h-full grid grid-cols-4 bg-[#FFFFFF]">
       {listItems.map((item, index) => (
         <div
           key={index}
-          className="flex items-center justify-between px-14 border border-solid border-[1px] border-[#E0E0E0] justify-center w-1/4 group hover:cursor-pointer"
+          className="flex items-center justify-between px-14 border border-solid border-[1px] border-[#E0E0E0] justify-center col-span-1 group hover:cursor-pointer hover:border-[#0D6EFD]"
         >
           <div className="flex flex-col">
             <h4 className="text-[#1C1C1C] font-semibold">{item.title}</h4>

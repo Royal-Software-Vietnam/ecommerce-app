@@ -1,5 +1,5 @@
 import React from "react";
-import Image from 'next/image'
+import Image from "next/image";
 
 function Search() {
   return (
@@ -21,7 +21,7 @@ function Search() {
                 type="button"
               >
                 Tất cả
-                <Image src="/dropdown.svg" width="12" height="8" alt={""} />
+                <img src="/dropdown.svg" alt={""} />
               </button>
               <button
                 type="submit"

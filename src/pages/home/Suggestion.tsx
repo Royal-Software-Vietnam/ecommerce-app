@@ -17,12 +17,12 @@ function Suggestion() {
   return (
     <div className="w-full px-[6.8%]">
         <h1 className="py-6 text-2xl font-bold text-[#1C1C1C]">Mua đi mà</h1>
-        <div className="w-full flex flex-wrap h-[640px]">
+        <div className="w-full grid grid-cols-5 gap-4 h-[640px]">
           {listItems.map((item, index) => (
-            <div key={index} className="w-1/5 h-[310px] hover:cursor-pointer hover:brightness-90">
-              <div  className="h-full p-2 m-2 rounded-lg bg-[#FFFFFF] border border-gray-300 border-solid border-[1px]">
+            <div key={index} className="col-span-1 h-[310px]">
+              <div  className="h-full p-2 rounded-lg bg-[#FFFFFF] border border-gray-300 border-solid border-[1px] group hover:cursor-pointer hover:border-[#0D6EFD]">
                 <div className="flex p-4 items-center h-[200px] mb-2">
-                  <img className="w-full h-full" src={item.svg} alt="" />
+                  <img className="w-full h-full group-hover:brightness-125" src={item.svg} alt="" />
                 </div>
                 <div className="flex flex-col px-6">
                   <h4 className="text-[#1C1C1C] font-semibold">{item.price}</h4>

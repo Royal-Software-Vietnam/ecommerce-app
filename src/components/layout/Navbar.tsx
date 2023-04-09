@@ -14,37 +14,19 @@ function Navbar() {
     <div>
       <Search />
       <div className="flex items-center justify-center absolute top-6 right-[7%]">
-        <button className="flex flex-col items-center px-4 justify-center text-sm">
-          <Image
-            src="/user.svg"
-            width="21"
-            height="17"
-            alt={""}
-            className="mb-2"
-          />
+        <a href="/" className="flex flex-col items-center px-4 justify-center text-sm">
+          <img className="mb-2" src="/user.svg" alt="" />
           Người dùng
-        </button>
+        </a>
 
-        <button className="flex flex-col items-center px-4 justify-center text-sm">
-          <Image
-            src="/cart.svg"
-            width="21"
-            height="17"
-            alt={""}
-            className="mb-2"
-          />
+        <a href="/cart" className="flex flex-col items-center px-4 justify-center text-sm">
+          <img className="mb-2" src="/cart.svg" alt="" />
           Giỏ hàng
-        </button>
+        </a>
       </div>
       <div className="flex w-full justify-between border border-gray-300 border-solid border-1px py-4 px-[6.8%]">
         <div className="flex items-center text-[#1C1C1C]">
-          <Image
-            src="/menu.svg"
-            width="18"
-            height="12"
-            alt={""}
-            className="mr-4"
-          />
+          <img className="mr-2" src="/menu.svg" alt="" />
           Tất cả
         </div>
         <div>
@@ -58,18 +40,18 @@ function Navbar() {
               <a className="text-[#1C1C1C] mr-2" href="/more">
                 Thêm
               </a>
-              <Image src="/dropdown.svg" width="12" height="8" alt={""} />
+              <img src="/dropdown.svg" alt={""} />
             </li>
           </ul>
         </div>
         <div className="flex text-[#1C1C1C] w-[15%]">
           <button className="flex items-center w-1/3">
             <p className="px-4">VND</p>
-            <Image src="/dropdown.svg" width="12" height="8" alt={""} />
+            <img src="/dropdown.svg" alt={""} />
           </button>
           <button className="flex items-center w-2/3">
             <p className="px-4">Tỉnh Thành</p>
-            <Image src="/dropdown.svg" width="12" height="8" alt={""} />
+            <img src="/dropdown.svg" alt={""} />
           </button>
         </div>
       </div>

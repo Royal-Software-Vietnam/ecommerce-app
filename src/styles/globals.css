@@ -43,3 +43,35 @@ svg {
 *:hover {
   transition: all ease-in-out 0.3s;
 }
+
+/* CSS Scrollbar */
+.scroll {
+  overflow-y: auto;
+}
+
+.scroll:active::-webkit-scrollbar-thumb,
+.scroll:focus::-webkit-scrollbar-thumb,
+.scroll:hover::-webkit-scrollbar-thumb {
+  visibility: visible;
+}
+
+.scroll::-webkit-scrollbar-thumb {
+  background: #0D6EFD;
+  visibility: hidden;
+}
+
+/* width */
+*::-webkit-scrollbar {
+  width: 2px;
+}
+
+/* Track */
+*::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+/* Handle on hover */
+*::-webkit-scrollbar-thumb:hover {
+  background: #555555;
+  cursor: pointer;
+}

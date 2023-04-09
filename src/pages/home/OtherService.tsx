@@ -11,12 +11,12 @@ function OtherService() {
   return (
     <div className="w-full px-[6.8%]">
         <h1 className="py-6 text-2xl font-bold text-[#1C1C1C]">Dịch vụ tiện ích khác</h1>
-        <div className="w-full flex flex-wrap h-[240px] mb-[125px]">
+        <div className="w-full grid grid-cols-4 gap-4 h-[240px] mb-[125px]">
           {listItems.map((item, index) => (
-            <div key={index} className="relative w-1/4 h-[200px] hover:cursor-pointer hover:brightness-90">
-              <div className="m-2 rounded-lg bg-[#FFFFFF] border border-gray-300 border-solid border-[1px]">
+            <div key={index} className="relative col-span-1 h-[200px] group hover:cursor-pointer">
+              <div className="rounded-lg bg-[#FFFFFF] border border-gray-300 border-solid border-[1px] group-hover:border-[#0D6EFD]">
                 <div className="h-[160px]">
-                  <img className="w-full bg-[#3f3f3f]" src={item.svg} alt="" />
+                  <img className="w-full bg-[#3f3f3f] group-hover:brightness-150 rounded-t-lg" src={item.svg} alt="" />
                 </div>
                 <div className="p-6 w-2/3">
                   <h3 className="text-[#1C1C1C] font-semibold text-xl">{item.description}</h3>

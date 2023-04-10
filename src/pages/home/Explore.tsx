@@ -17,7 +17,7 @@ const listItems = [
 
 function Explore() {
   return (
-    <div className="w-full px-[6.8%]">
+    <div className="w-full px-[7%]">
       <h1 className="py-6 text-2xl font-bold text-[#1C1C1C]">Khám phá</h1>
       <div className="w-full grid grid-cols-4 gap-6 border border-gray-300 border-solid border-1px h-[400px] p-5 rounded-lg mb-6 bg-[#FFFFFF]">
         <div className="col-span-1 flex flex-col justify-between">
@@ -29,7 +29,9 @@ function Explore() {
                 className="group hover:no-underline"
               >
                 <li className="py-1.5 px-4 text-xl text-[#505050] group-hover:bg-[#E5F1FF] group-hover:text-[#1C1C1C] group-hover:font-semibold rounded-lg">
+                  <p className="text-[16px] leading-[19px]">
                   {item.name}
+                  </p>
                 </li>
               </Link>
             ))}

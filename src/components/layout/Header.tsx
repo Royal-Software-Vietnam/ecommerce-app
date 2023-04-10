@@ -1,48 +1,84 @@
-import React from "react";
+import React, { useRef } from "react";
 import Search from "./Search";
 import Link from "next/link";
 import Image from "next/image";
 import Navbar from "./Navbar";
 
 export default function Header() {
-  return (
-    <>
-      <div className="flex relative mx-[6.8%]">
-        <Link href="/" className="absolute left-0 top-4 p-2 border border-solid border-[1px] border-[#DEE2E7] rounded-lg hover:border-[#0067FF] hover:cursor-pointer">
-            <Image className="" width="40" height="40" src="/favicon.png" alt="" />
-        </Link>
-        <Search />
-        <div className="absolute grid grid-cols-2 gap-4 items-center justify-center top-6 right-0">
-          <Link
-            href="/"
-            className="col-span-1 flex flex-col items-center justify-center text-sm"
-          >
-            <Image
-              width="20"
-              height="19"
-              className="mb-2"
-              src="/user.svg"
-              alt=""
-            />
-            Người dùng
-          </Link>
 
-          <Link
-            href="/cart"
-            className="col-span-1 flex flex-col items-center justify-center text-sm"
-          >
-            <Image
-              width="20"
-              height="19"
-              className="mb-2"
-              src="/cart.svg"
-              alt=""
-            />
-            Giỏ hàng
-          </Link>
+  const inputRef = useRef<HTMLInputElement>(null)
+  const selectRef = useRef<HTMLSelectElement>(null)
+  const handleSearch = (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault()
+    console.log(`Search:`, { keyword: inputRef.current?.value, category: selectRef.current?.value })
+  }
+
+  return <>
+    <div className="flex px-[7%] h-[86px] items-center justify-between">
+      <div className="flex md:hidden items-center">
+        <Image src={"/menu.svg"} alt="" width={20} height={20} priority />
+      </div>
+      <div className="left">
+        <Link href="/" className="flex no-underline items-center left-0 top-4 p-2 rounded-lg hover:border-[#0067FF] hover:cursor-pointer">
+          <Image className="" width="40" height="40" src="/favicon.png" alt="" />
+          <h3 className="text-xl font-bold text-sky-300">ABCD</h3>
+        </Link>
+      </div>
+
+      <form onSubmit={handleSearch} className="hidden md:flex items-center middle ml-[46px] h-[40px] rounded-lg pl-4 border-primary_sky border-solid border-2">
+        <input ref={inputRef} type="text" className="placeholder:text-gray-300 w-[420px]" placeholder="Tìm kiếm" />
+        <div className="flex justify-center px-2 w-[120px] h-[40px] border-primary_sky border-solid border-2">
+          <select ref={selectRef} name="" id="" className="w-full outline-none">
+            <option value={0}>Tất cả</option>
+            <option value={"laptop"}>Laptop</option>
+            <option value={"mobile"}>Mobile</option>
+          </select>
+        </div>
+        <button type="submit" className="bg-primary_sky text-white h-[40px] w-[100px] rounded-r-lg">Tìm kiếm</button>
+      </form>
+
+      <div className="ml-[70px] right flex items-center space-x-[16px]">
+        <div className="flex items-center flex-col">
+          <Image src={"/user.svg"} width={20} height={20} alt="" priority />
+          <label className="hidden md:flex mt-[7px] text-[12px] leading-[15px] text-[#8B96A5]">Username</label>
+        </div>
+        <div className="hidden lg:flex items-center flex-col">
+          <Image src={"/cskh.svg"} width={20} height={20} alt="" priority />
+          <label className="hidden md:flex mt-[7px] text-[12px] leading-[15px] text-[#8B96A5]">CSKH</label>
+        </div>
+        <div className="hidden lg:flex items-center flex-col">
+          <Image src={"/like.svg"} width={20} height={20} alt="" priority />
+          <label className="hidden md:flex mt-[7px] text-[12px] leading-[15px] text-[#8B96A5]">Yêu thích</label>
+        </div>
+        <div className="flex items-center flex-col">
+          <Image src={"/cart.svg"} width={20} height={20} alt="" priority />
+          <label className="hidden md:flex mt-[7px] text-[12px] leading-[15px] text-[#8B96A5]">Giỏ hàng</label>
         </div>
       </div>
-      <Navbar />
-    </>
-  );
+    </div>
+    <div className="flex md:hidden px-[8%] h-[56px] w-full items-center space-x-10 border-t-[0.3px] border-solid border-gray-300">
+      <form onSubmit={handleSearch} className="relative w-full h-[40px] bg-gray-100 rounded-lg border-solid border-[0.3px] border-gray-300">
+        <input type="text" className="w-full h-[40px] pl-8 bg-gray-100 rounded-lg" placeholder="Tìm kiếm" />
+        <Image src={"/search.svg"} width={22} height={22} className="absolute top-2 left-2" alt=""/>
+      </form>
+    </div>
+    <div className="hidden md:flex px-[8%] h-[56px] w-full items-center space-x-10 border-t-[0.3px] border-solid border-gray-300">
+      <div className="flex items-center space-x-2">
+        <Image src={"/menu.svg"} alt="" width={20} height={20} priority />
+        <p className="text-[16px] leading-[22px]">Tất cả</p>
+      </div>
+      <div className="flex items-center space-x-2">
+        <p className="text-[16px] leading-[22px]">Free ship</p>
+      </div>
+      <div className="flex items-center space-x-2">
+        <p className="text-[16px] leading-[22px]">Big sale</p>
+      </div>
+      <div className="flex items-center space-x-2">
+        <p className="text-[16px] leading-[22px]">Hàng hiệu</p>
+      </div>
+      <div className="flex items-center space-x-2">
+        <p className="text-[16px] leading-[22px]">Tuyển dụng</p>
+      </div>
+    </div>
+  </>
 }

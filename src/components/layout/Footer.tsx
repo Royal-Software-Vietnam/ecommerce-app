@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 function Footer() {
@@ -16,34 +17,34 @@ function Footer() {
         </div>
         <div className="w-1/6 flex flex-col mt-10">
           <h5 className="font-semibold text-xl text-[#1C1C1C] mb-2">Giới thiệu</h5>
-          <a href="/">Lorem ipsum</a>
-          <a href="/">Lorem ipsum</a>
-          <a href="/">Lorem ipsum</a>
-          <a href="/">Lorem ipsum</a>
-          <a href="/">Lorem ipsum</a>
+          <Link href="/">Lorem ipsum</Link>
+          <Link href="/">Lorem ipsum</Link>
+          <Link href="/">Lorem ipsum</Link>
+          <Link href="/">Lorem ipsum</Link>
+          <Link href="/">Lorem ipsum</Link>
         </div>
         <div className="w-1/6 flex flex-col mt-10">
           <h5 className="font-semibold text-xl text-[#1C1C1C] mb-2">Đối tác</h5>
-          <a href="/">Lorem ipsum</a>
-          <a href="/">Lorem ipsum</a>
-          <a href="/">Lorem ipsum</a>
-          <a href="/">Lorem ipsum</a>
-          <a href="/">Lorem ipsum</a>
+          <Link href="/">Lorem ipsum</Link>
+          <Link href="/">Lorem ipsum</Link>
+          <Link href="/">Lorem ipsum</Link>
+          <Link href="/">Lorem ipsum</Link>
+          <Link href="/">Lorem ipsum</Link>
         </div>
         <div className="w-1/6 flex flex-col mt-10">
           <h5 className="font-semibold text-xl text-[#1C1C1C] mb-2">Thông tin</h5>
-          <a href="/">Lorem ipsum</a>
-          <a href="/">Lorem ipsum</a>
-          <a href="/">Lorem ipsum</a>
-          <a href="/">Lorem ipsum</a>
-          <a href="/">Lorem ipsum</a>
+          <Link href="/">Lorem ipsum</Link>
+          <Link href="/">Lorem ipsum</Link>
+          <Link href="/">Lorem ipsum</Link>
+          <Link href="/">Lorem ipsum</Link>
+          <Link href="/">Lorem ipsum</Link>
         </div>
         <div className="w-1/6 flex flex-col mt-10">
           <h5 className="font-semibold text-xl text-[#1C1C1C] mb-2">Người dùng</h5>
-          <a href="/">Lorem ipsum</a>
-          <a href="/">Lorem ipsum</a>
-          <a href="/">Lorem ipsum</a>
-          <a href="/">Lorem ipsum</a>
+          <Link href="/">Lorem ipsum</Link>
+          <Link href="/">Lorem ipsum</Link>
+          <Link href="/">Lorem ipsum</Link>
+          <Link href="/">Lorem ipsum</Link>
         </div>
       </div>
       <div className="w-full h-[68px] px-[6.8%] flex items-center px-10 py-3 bg-gray-200 border-gray-300">

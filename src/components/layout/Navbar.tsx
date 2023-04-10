@@ -38,9 +38,9 @@ function Navbar() {
               </Link>
             ))}
             <li className="flex px-4">
-              <a className="text-[#1C1C1C] mr-2" href="/more">
+              <Link className="text-[#1C1C1C] mr-2" href="/">
                 Thêm
-              </a>
+              </Link>
               <img src="/dropdown.svg" alt={""} />
             </li>
           </ul>

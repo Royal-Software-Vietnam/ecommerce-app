@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 
 const listItems = [
@@ -26,7 +27,7 @@ function Content() {
             {listItems.map((item, index) => (
                 <div key={index} className="relative w-full h-[230px] flex border border-gray-300 border-solid border-1px rounded-lg mb-4 p-4 bg-[#FFFFFF]">
                     <div>
-                        <img src={item.svg} alt="" />
+                        <Image width="184" height="184" src={item.svg} alt="" />
                     </div>
                     <div className="flex flex-col justify-evenly">
                         <div>
@@ -39,7 +40,7 @@ function Content() {
                         </div>
                     </div>
                     <button className="absolute top-10 right-10">
-                        <img src="/like.svg" alt="" />
+                        <Image width="20" height="18" src="/like.svg" alt="" />
                     </button>
                 </div>
             ))}

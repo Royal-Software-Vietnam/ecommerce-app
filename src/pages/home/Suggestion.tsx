@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { useRouter } from "next/router";
 import React from "react";
 
@@ -74,10 +75,12 @@ function Suggestion() {
           >
             <div className="h-full p-2 rounded-lg bg-[#FFFFFF] border border-gray-300 border-solid border-[1px] group hover:cursor-pointer hover:border-[#0D6EFD]">
               <div className="flex p-4 items-center h-[200px] mb-2">
-                <img
+                <Image
                   className="w-full h-full group-hover:brightness-125"
                   src={item.svg}
                   alt=""
+                  width="150"
+                  height="170"
                 />
               </div>
               <div className="flex flex-col px-6">

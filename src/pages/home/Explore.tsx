@@ -36,8 +36,8 @@ function Explore() {
           </ul>
         </div>
         <div className="relative h-full container col-span-2 flex items-center">
-          <img className="w-full" src="/home-1.svg" alt="" />
-          <div className="absolute top-10 left-20">
+          <Image className="w-full" width="664" height="360" src="/home-1.svg" alt="" />
+          <div className="absolute top-10 left-10">
             <h3 className="text-2xl text-[#1C1C1C] mb-2">Hàng mới về</h3>
             <h2 className="text-4xl font-bold text-[#1C1C1C] mb-4">
               Tai Nghe Quang Châu
@@ -76,7 +76,7 @@ function Explore() {
       </div>
       <div className="w-full flex border border-gray-300 border-solid border-[1px] h-[250px] rounded-lg">
         <div className="relative w-[20%] flex items-center">
-          <img className="h-full w-full rounded-l-lg" src="/home-2.svg" alt="" />
+          <Image className="h-full w-full rounded-l-lg" width="295" height="374" src="/home-2.svg" alt="" />
           <div className="absolute top-10 left-5">
             <h2 className="text-xl font-bold text-[#1C1C1C] mb-4 w-2/3">
               Hàng điện tử Quảng Châu chất lượng cao

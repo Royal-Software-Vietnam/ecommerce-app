@@ -1,5 +1,6 @@
 import { useRouter } from "next/router";
 import React from "react";
+import Image from "next/image";
 
 const listItems = [
   { title: "Đồng hồ điện tử", price: "300.000", svg: "/item-1.svg" },
@@ -33,10 +34,12 @@ function ExtraExplore() {
             <span className="text-[#8B96A5]">{item.price}</span>
           </div>
           <div>
-            <img
+            <Image
               className="group-hover:contrast-125 hover:-translate-y-4"
               src={item.svg}
               alt=""
+              width="60"
+              height="70"
             />
           </div>
         </div>

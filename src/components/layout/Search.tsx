@@ -3,7 +3,7 @@ import Image from "next/image";
 
 function Search() {
   return (
-    <div>
+    <div className="w-full">
       <form>
         <div className="flex my-6 w-full height-[40px] items-center justify-center">
           <div className="w-[40%] h-full flex border border-[#0D6EFD] border-solid border-[2px] rounded-lg">

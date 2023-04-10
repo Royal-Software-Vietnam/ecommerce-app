@@ -17,7 +17,7 @@ const listItems = [
     {name: "Apple Watch Gen 4", price: "2.000.000", description: "Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.", svg: "/category-item-1.svg"}
 ]
 
-function Content() {
+function Merchandises() {
   return (
     <div className="w-full">
         <div className="w-full flex border border-gray-300 border-solid border-1px my-6 p-6 rounded-lg bg-[#FFFFFF]">
@@ -49,4 +49,4 @@ function Content() {
   )
 }
 
-export default Content
+export default Merchandises

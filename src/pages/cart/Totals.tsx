@@ -5,13 +5,13 @@ function Totals({ data }: { data: any }) {
   let discount = 0;
   let shipping = 22000;
 
-  data.forEach((element: { price: number; quantity: number }) => {
-    total += element.price * element.quantity;
-  });
+  // data.forEach((element: { price: number; quantity: number }) => {
+  //   total += element.price * element.quantity;
+  // });
 
   let pay = total - discount + shipping;
 
-  console.log(total);
+  // console.log(total);
 
   return (
     <div className="col-span-1 h-[30vh] p-4 border border-gray-300 border-solid border-1px rounded-lg bg-[#FFFFFF] px-6">

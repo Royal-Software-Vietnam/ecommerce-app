@@ -2,6 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  .box-container {
+    width: 100%;
+    padding: 0 7%;
+  }
+
+  .border-primary {
+    border: 1px solid #E0E0E0;
+  }
+
+  .border-secondary {
+    border: 1px solid #DEE2E7;
+  }
+
+  .bg-inquiry {
+    background: linear-gradient(94.99deg, #2C7CF1 7.19%, rgba(0, 209, 255, 0.5) 89.49%);
+  }
+}
+
 html,
 body {
   padding: 0;

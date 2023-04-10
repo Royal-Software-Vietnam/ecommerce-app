@@ -1,9 +1,14 @@
 import Image from "next/image";
 import { Inter } from "next/font/google";
-import Explore from "./home/Explore";
-import Suggestion from "./home/Suggestion";
-import OtherService from "./home/OtherService";
 import Head from "next/head";
+import SectionMain from "./home/SectionMain";
+import SectionSale from "./home/SectionSale";
+import GroupItemA from "./home/GroupItemA";
+import GroupItemB from "./home/GroupItemB";
+import SectionInquiry from "./home/SectionInquiry";
+import SectionRecommand from "./home/SectionRecommand";
+import SectionService from "./home/SectionService";
+import SectionCountry from "./home/SectionCountry";
 
 export default function Home() {
   return (
@@ -14,10 +19,15 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.png" />
       </Head>
-      <main className="overflow-x-auto bg-gray-200 scroll">
-        <Explore />
-        <Suggestion />
-        <OtherService />
+      <main className="overflow-x-auto bg-homestyle scroll">
+        <SectionMain />
+        <SectionSale />
+        <GroupItemA />
+        <GroupItemB />
+        <SectionInquiry />
+        <SectionRecommand />
+        <SectionService />
+        <SectionCountry />
       </main>
     </>
   );

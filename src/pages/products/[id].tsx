@@ -28,7 +28,7 @@ function ProductDetail() {
   }
 
   return (
-    <div className="w-full px-[6.8%] bg-gray-200 py-6 h-[100vh]">
+    <div className="box-container bg-homestyle py-6 h-[100vh]">
         <div className="w-full flex border border-gray-300 border-solid border-1px p-4 rounded-lg bg-[#FFFFFF]">
           Abc
         </div>

@@ -39,7 +39,7 @@ const listItems = [
 
 function index() {
   return (
-    <div className="flex w-full h-[80vh] px-[6.8%] flex-col bg-gray-200">
+    <div className="flex h-[80vh] box-container flex-col bg-homestyle">
       <h2 className="w-full text-[#1C1C1C] text-2xl font-semibold py-6">
         Giỏ hàng (0)
       </h2>

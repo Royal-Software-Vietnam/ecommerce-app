@@ -13,7 +13,7 @@ const listItems = [
   { name: "Thú cưng", path: "/" },
 ];
 
-function LeftSide() {
+function Category() {
   return (
     <div className="w-1/4 h-[100vh] flex flex-col mr-4">
       <h2 className="text-xl text-[#1C1C1C] font-bold my-6">Danh mục sản phẩm</h2>
@@ -30,4 +30,4 @@ function LeftSide() {
   );
 }
 
-export default LeftSide;
+export default Category;

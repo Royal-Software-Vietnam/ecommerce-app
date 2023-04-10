@@ -9,7 +9,7 @@ const listItems = [
   { description: "An toàn và bảo mật trong vận chuyển", icon: "/service-icon-4.svg", svg: "/service-4.svg"}
 ]
 
-function OtherService() {
+function SectionService() {
   return (
     <div className="w-full px-[6.8%]">
         <h1 className="py-6 text-2xl font-bold text-[#1C1C1C]">Dịch vụ tiện ích khác</h1>
@@ -34,4 +34,4 @@ function OtherService() {
   )
 }
 
-export default OtherService
+export default SectionService

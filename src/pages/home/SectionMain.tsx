@@ -1,25 +1,26 @@
 import React from "react";
-import ExtraExplore from "./ExtraExplore";
+import ExtraExplore from "./GroupItemB";
 import Link from "next/link";
 import Image from "next/image";
+import SectionTitle from "@/components/common/SectionTitle";
 
 const listItems = [
-  { name: "Điện thoại di động", path: "/category" },
-  { name: "Trang phục", path: "/category" },
-  { name: "Đồ gia dụng", path: "/category" },
-  { name: "Đồ điện tử", path: "/category" },
-  { name: "Công cụ", path: "/category" },
-  { name: "Thể thao", path: "/category" },
-  { name: "Mẹ và bé", path: "/category" },
-  { name: "Thú cưng", path: "/category" },
-  { name: "Xem thêm", path: "/category" },
+  { name: "Điện thoại di động", path: "/store" },
+  { name: "Trang phục", path: "/store" },
+  { name: "Đồ gia dụng", path: "/store" },
+  { name: "Đồ điện tử", path: "/store" },
+  { name: "Công cụ", path: "/store" },
+  { name: "Thể thao", path: "/store" },
+  { name: "Mẹ và bé", path: "/store" },
+  { name: "Thú cưng", path: "/store" },
+  { name: "Xem thêm", path: "/store" },
 ];
 
-function Explore() {
+function SectionMain() {
   return (
-    <div className="w-full px-[7%]">
-      <h1 className="py-6 text-2xl font-bold text-[#1C1C1C]">Khám phá</h1>
-      <div className="w-full grid grid-cols-4 gap-6 border border-gray-300 border-solid border-1px h-[400px] p-5 rounded-lg mb-6 bg-[#FFFFFF]">
+    <div className="box-container">
+      <SectionTitle title ="Khám phá" />
+      <div className="w-full grid grid-cols-4 gap-6 border-secondary h-[400px] p-5 rounded-lg mb-6 bg-[#FFFFFF]">
         <div className="col-span-1 flex flex-col justify-between">
           <ul>
             {listItems.map((item, index) => (
@@ -61,10 +62,10 @@ function Explore() {
                 Đăng nhập đi
               </p>
             </div>
-            <button className="w-[40%] p-1 bg-[#0067FF] text-[#FFFFFF] font-semibold rounded-lg mb-2 hover:brightness-75">
+            <button className="w-[40%] p-1 bg-gradient-primary text-[#FFFFFF] font-semibold rounded-lg mb-2 hover:brightness-75">
               Đăng nhập
             </button>
-            <button className="w-[40%] p-1 bg-[#FFFFFF] text-[#0067FF] font-semibold rounded-lg mb-2 hover:brightness-75">
+            <button className="w-[40%] p-1 bg-[#FFFFFF] text-[#0067FF] font-semibold border-secondary mb-2 hover:brightness-75">
               Đăng ký
             </button>
           </div>
@@ -76,22 +77,8 @@ function Explore() {
           </div>
         </div>
       </div>
-      <div className="w-full flex border border-gray-300 border-solid border-[1px] h-[250px] rounded-lg">
-        <div className="relative w-[20%] flex items-center">
-          <Image className="h-full w-full rounded-l-lg" width="295" height="374" src="/home-2.svg" alt="" />
-          <div className="absolute top-10 left-5">
-            <h2 className="text-xl font-bold text-[#1C1C1C] mb-4 w-2/3">
-              Hàng điện tử Quảng Châu chất lượng cao
-            </h2>
-            <button className="px-4 py-2 bg-[#FFFFFF] text-[#1C1C1C] font-semibold rounded-lg mb-2 hover:brightness-75">
-              Khám phá
-            </button>
-          </div>
-        </div>
-        <ExtraExplore />
-      </div>
     </div>
   );
 }
 
-export default Explore;
+export default SectionMain;

@@ -34,7 +34,7 @@ export default function Header() {
             <option value={"mobile"}>Mobile</option>
           </select>
         </div>
-        <button type="submit" className="bg-primary_sky text-white h-[40px] w-[100px] rounded-r-lg">Tìm kiếm</button>
+        <button type="submit" className="bg-gradient-primary text-white h-[40px] w-[100px] rounded-r-lg">Tìm kiếm</button>
       </form>
 
       <div className="ml-[70px] right flex items-center space-x-[16px]">
@@ -56,13 +56,13 @@ export default function Header() {
         </div>
       </div>
     </div>
-    <div className="flex md:hidden px-[8%] h-[56px] w-full items-center space-x-10 border-t-[0.3px] border-solid border-gray-300">
+    <div className="flex md:hidden px-[8%] h-[56px] w-full items-center space-x-10 border-primary">
       <form onSubmit={handleSearch} className="relative w-full h-[40px] bg-gray-100 rounded-lg border-solid border-[0.3px] border-gray-300">
         <input type="text" className="w-full h-[40px] pl-8 bg-gray-100 rounded-lg" placeholder="Tìm kiếm" />
         <Image src={"/search.svg"} width={22} height={22} className="absolute top-2 left-2" alt=""/>
       </form>
     </div>
-    <div className="hidden md:flex px-[8%] h-[56px] w-full items-center space-x-10 border-t-[0.3px] border-solid border-gray-300">
+    <div className="hidden md:flex px-[8%] h-[56px] w-full items-center space-x-10 border-primary">
       <div className="flex items-center space-x-2">
         <Image src={"/menu.svg"} alt="" width={20} height={20} priority />
         <p className="text-[16px] leading-[22px]">Tất cả</p>

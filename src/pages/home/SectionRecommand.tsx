@@ -55,7 +55,7 @@ const listItems = [
   },
 ];
 
-function Suggestion() {
+function SectionRecommand() {
   const route = useRouter();
 
   return (
@@ -95,4 +95,4 @@ function Suggestion() {
   );
 }
 
-export default Suggestion;
+export default SectionRecommand;

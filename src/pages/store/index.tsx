@@ -4,7 +4,7 @@ import Merchandises from './Merchandises'
 
 function index() {
   return (
-    <div className="flex box-container bg-homestyle">
+    <div className="flex box-container bg-gray-100">
         <Category />
         <Merchandises />
     </div>

@@ -39,8 +39,8 @@ const listItems = [
 
 function index() {
   return (
-    <div className="flex h-[80vh] box-container flex-col bg-homestyle">
-      <h2 className="w-full text-[#1C1C1C] text-2xl font-semibold py-6">
+    <div className="flex h-[100vh] box-container flex-col bg-gray-100">
+      <h2 className="w-full text-2xl font-semibold py-6">
         Giỏ hàng (0)
       </h2>
       <div className="grid grid-cols-4 gap-4">

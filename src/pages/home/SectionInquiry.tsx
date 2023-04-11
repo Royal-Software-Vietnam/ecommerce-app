@@ -44,7 +44,7 @@ export default function SectionInquiry() {
             adipisicing elit, sed do eiusmod tempor incididunt.
           </span>
         </div>
-        <div className="w-1/2 bg-[#FFFFFF] rounded-lg h-[346px]">
+        <div className="w-1/2 bg-[white] rounded-lg h-[346px]">
           <form onSubmit={handleSubmit} className="flex flex-col p-5 gap-4" action="/api/form-contact" method="post">
             <h3 className="text-2xl font-bold">Điền các thông tin về sản phẩm</h3>
             <input
@@ -82,7 +82,7 @@ export default function SectionInquiry() {
             </div>
             <button
               type="submit"
-              className="w-[14%] p-1 py-2 bg-gradient-primary text-[#FFFFFF] font-medium rounded-lg ml-4 hover:brightness-75"
+              className="w-[14%] p-1 py-2 bg-gradient-primary text-white font-medium rounded-lg ml-4 hover:brightness-75"
             >
               Yêu cầu
             </button>

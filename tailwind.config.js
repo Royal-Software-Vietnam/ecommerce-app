@@ -12,7 +12,6 @@ module.exports = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
         "gradient-primary": "linear-gradient(180deg, #127FFF 0%, #0067FF 100%)",
-        homestyle: "#F7FAFC",
       },
       colors: {
         primary_sky: "#0973FF",

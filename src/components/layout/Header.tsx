@@ -14,12 +14,12 @@ export default function Header() {
   }
 
   return <>
-    <div className="flex px-[7%] h-[86px] items-center justify-between">
+    <div className="flex px-[7%] h-[86px] items-center justify-between bg-white">
       <div className="flex md:hidden items-center">
         <Image src={"/menu.svg"} alt="" width={20} height={20} priority />
       </div>
       <div className="left">
-        <Link href="/" className="flex no-underline items-center left-0 top-4 p-2 rounded-lg hover:border-[#0067FF] hover:cursor-pointer">
+        <Link href="/" className="flex items-center left-0 top-4 p-2 rounded-lg hover:border-[#0067FF] hover:cursor-pointer hover:no-underline">
           <Image className="" width="40" height="40" src="/favicon.png" alt="" />
           <h3 className="text-xl font-bold text-sky-300">ABCD</h3>
         </Link>

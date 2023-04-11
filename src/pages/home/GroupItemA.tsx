@@ -26,15 +26,15 @@ function GroupItemA() {
           alt=""
         />
         <div className="absolute top-10 left-5">
-          <h2 className="text-xl font-bold text-[#1C1C1C] mb-4 w-2/3">
+          <h2 className="text-xl font-bold mb-4 w-2/3">
             Đồ gia dụng trong gia đình
           </h2>
-          <button className="px-4 py-2 bg-[#FFFFFF] text-[#1C1C1C] font-semibold rounded-lg mb-2 hover:brightness-75">
+          <button className="px-4 py-2 bg-white border-primary font-semibold rounded-lg mb-2 hover:brightness-75">
             Khám phá
           </button>
         </div>
       </div>
-      <div className="container h-full grid grid-cols-4 bg-[#FFFFFF]">
+      <div className="container h-full grid grid-cols-4 bg-white">
         {listItems.map((item, index) => (
           <div
             key={index}
@@ -47,7 +47,7 @@ function GroupItemA() {
             }
           >
             <div className="flex flex-col">
-              <h4 className="text-[#1C1C1C] font-semibold">{item.title}</h4>
+              <h4 className="font-semibold">{item.title}</h4>
               <p className="text-[#8B96A5]">Giá từ</p>
               <span className="text-[#8B96A5]">{item.price}</span>
             </div>

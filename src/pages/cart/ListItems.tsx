@@ -5,7 +5,7 @@ import React from "react";
 function ListItems({ data }: { data: any }) {
   //   console.log(data);
   return (
-    <div className="col-span-3 h-[70vh] border border-gray-300 border-solid border-[1px] rounded-lg bg-[#FFFFFF]">
+    <div className="col-span-3 h-[72vh] border border-gray-300 border-solid border-[1px] rounded-lg bg-white">
       <div className="px-8 h-[60vh] overflow-y-auto scroll">
         {data &&
           data.map((item: any, index: number) => (
@@ -35,10 +35,10 @@ function ListItems({ data }: { data: any }) {
                 </div>
               </div>
               <div className="ml-[8%] mb-6">
-                <button className="border-[##DEE2E7] border-[1px] border-solid text-[#FA3434] py-2 px-4 rounded-lg mr-4 hover:bg-[#FA3434] hover:text-[#FFFFFF] font-semibold">
+                <button className="border-[##DEE2E7] border-[1px] border-solid text-[#FA3434] py-2 px-4 rounded-lg mr-4 hover:bg-[#FA3434] hover:text-white font-semibold">
                   Xóa
                 </button>
-                <button className="border-[##DEE2E7] border-[1px] border-solid text-[#0D6EFD] py-2 px-4 rounded-lg hover:bg-[#0D6EFD] hover:text-[#FFFFFF] font-semibold">
+                <button className="border-[##DEE2E7] border-[1px] border-solid text-[#0D6EFD] py-2 px-4 rounded-lg hover:bg-[#0D6EFD] hover:text-white font-semibold">
                   Xem thông tin
                 </button>
               </div>
@@ -46,11 +46,11 @@ function ListItems({ data }: { data: any }) {
           ))}
       </div>
       <div className="flex justify-between mx-8 pt-5 border-t-gray-300 border-t-solid border-t-[1px]">
-        <button className="flex group items-center border-[##0D6EFD] border-[1px] border-solid text-[#FFFFFF] py-2 px-6 rounded-lg bg-[#0D6EFD] hover:text-[#FFFFFF] font-semibold">
+        <button className="flex group items-center border-[##0D6EFD] border-[1px] border-solid text-white py-2 px-6 rounded-lg bg-[#0D6EFD] hover:text-white font-semibold">
           <Image width="14" height="14" className="mr-3 transition duration-300 ease-in-out opacity-50 group-hover:-translate-x-2 group-hover:opacity-100" src="/previous.svg" alt="" />
           Trở về cửa hàng
         </button>
-        <button className="border-[##DEE2E7] border-[1px] border-solid text-[#0D6EFD] py-2 px-4 rounded-lg hover:bg-[#0D6EFD] hover:text-[#FFFFFF] font-semibold">
+        <button className="border-[##DEE2E7] border-[1px] border-solid text-[#0D6EFD] py-2 px-4 rounded-lg hover:bg-[#0D6EFD] hover:text-white font-semibold">
           Xóa hết
         </button>
       </div>

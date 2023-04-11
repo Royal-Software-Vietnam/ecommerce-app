@@ -1,3 +1,4 @@
+import SectionTitle from "@/components/common/SectionTitle";
 import Image from "next/image";
 import { useRouter } from "next/router";
 import React from "react";
@@ -60,7 +61,7 @@ function SectionRecommand() {
 
   return (
     <div className="w-full px-[6.8%]">
-      <h1 className="py-6 text-2xl font-bold text-[#1C1C1C]">Mua đi mà</h1>
+      <SectionTitle title="Mua đi mà" />
       <div className="w-full grid grid-cols-5 gap-4 h-[640px]">
         {listItems.map((item, index) => (
           <div
@@ -73,7 +74,7 @@ function SectionRecommand() {
               })
             }
           >
-            <div className="h-full p-2 rounded-lg bg-[#FFFFFF] border-secondary group hover:cursor-pointer hover:border-[#0D6EFD]">
+            <div className="h-full p-2 rounded-lg bg-white border-secondary group hover:cursor-pointer hover:border-[#0D6EFD]">
               <div className="flex p-4 items-center h-[200px] mb-2">
                 <Image
                   className="w-full h-full group-hover:brightness-125"
@@ -84,7 +85,7 @@ function SectionRecommand() {
                 />
               </div>
               <div className="flex flex-col px-6">
-                <h4 className="text-[#1C1C1C] font-semibold">{item.price}</h4>
+                <h4 className="font-semibold">{item.price}</h4>
                 <p className="text-[#8B96A5]">{item.description}</p>
               </div>
             </div>

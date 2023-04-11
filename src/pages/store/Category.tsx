@@ -16,7 +16,7 @@ const listItems = [
 function Category() {
   return (
     <div className="w-1/4 h-[100vh] flex flex-col mr-4">
-      <h2 className="text-xl text-[#1C1C1C] font-bold my-6">Danh mục sản phẩm</h2>
+      <h2 className="text-xl font-bold my-6">Danh mục sản phẩm</h2>
       <ul>
         {listItems.map((item, index) => (
           <Link key={index} href={item.path}>

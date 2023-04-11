@@ -16,8 +16,8 @@ const listItems = [
 function GroupItemA() {
   const route = useRouter();
   return (
-    <div className="box-container flex h-[250px] rounded-lg mt-6">
-      <div className="relative w-[20%] flex items-center">
+    <div className="box-container flex h-[250px] rounded-lg mt-8">
+      <div className="relative w-[20%] flex items-center bg-[#C4C4C4] rounded-l-lg">
         <Image
           className="h-full w-full rounded-l-lg"
           width="295"
@@ -27,7 +27,7 @@ function GroupItemA() {
         />
         <div className="absolute top-10 left-5">
           <h2 className="text-xl font-bold text-[#1C1C1C] mb-4 w-2/3">
-            Đồ điện tử và các phụ kiện
+            Đồ gia dụng trong gia đình
           </h2>
           <button className="px-4 py-2 bg-[#FFFFFF] text-[#1C1C1C] font-semibold rounded-lg mb-2 hover:brightness-75">
             Khám phá

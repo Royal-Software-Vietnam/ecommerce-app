@@ -26,7 +26,7 @@ export default function SectionSale() {
             </div>
             <h4 className="text-[#1C1C1C] font-semibold">{item.title}</h4>
             <div className="flex py-1 justify-center w-[60px] bg-[#FFE3E3] rounded-xl">
-              <span className="text-[#EB001B] text-[14px]">25%</span>
+              <span className="text-[#EB001B] text-[14px]">-25%</span>
             </div>
           </div>
         ))}

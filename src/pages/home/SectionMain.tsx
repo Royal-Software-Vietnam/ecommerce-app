@@ -65,7 +65,7 @@ function SectionMain() {
             <button className="w-[40%] p-1 bg-gradient-primary text-[#FFFFFF] font-semibold rounded-lg mb-2 hover:brightness-75">
               Đăng nhập
             </button>
-            <button className="w-[40%] p-1 bg-[#FFFFFF] text-[#0067FF] font-semibold border-secondary mb-2 hover:brightness-75">
+            <button className="w-[40%] p-1 bg-[#FFFFFF] text-[#0067FF] font-semibold border-secondary rounded-lg mb-2 hover:brightness-75">
               Đăng ký
             </button>
           </div>

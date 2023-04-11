@@ -4,7 +4,7 @@ import React from "react";
 function Footer() {
   return (
     <div>
-      <div className="h-[256px] flex w-full flex px-[6.8%]">
+      <div className="h-[256px] flex w-full flex px-[6.8%] mt-[125px]">
         <div className="w-1/3 mt-24 mr-12">
           <p className="text-xl mb-4">Lorem ipsum is placeholder text commonly used in the graphic, print, Lorem ipsum is placeholder text commonly used in the graphic, print</p>
           <div className="flex">

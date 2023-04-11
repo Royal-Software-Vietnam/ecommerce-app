@@ -73,7 +73,7 @@ function SectionRecommand() {
               })
             }
           >
-            <div className="h-full p-2 rounded-lg bg-[#FFFFFF] border border-gray-300 border-solid border-[1px] group hover:cursor-pointer hover:border-[#0D6EFD]">
+            <div className="h-full p-2 rounded-lg bg-[#FFFFFF] border-secondary group hover:cursor-pointer hover:border-[#0D6EFD]">
               <div className="flex p-4 items-center h-[200px] mb-2">
                 <Image
                   className="w-full h-full group-hover:brightness-125"

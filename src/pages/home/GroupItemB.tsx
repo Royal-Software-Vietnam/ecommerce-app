@@ -17,7 +17,7 @@ function GroupItemB() {
   const route = useRouter();
   return (
     <div className="box-container flex h-[250px] rounded-lg mt-6">
-      <div className="relative w-[20%] flex items-center">
+      <div className="relative w-[20%] flex items-center bg-[#C4C4C4] rounded-l-lg">
         <Image
           className="h-full w-full rounded-l-lg"
           width="295"

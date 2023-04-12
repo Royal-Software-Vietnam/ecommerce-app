@@ -28,9 +28,10 @@ function ProductDetail() {
   }
 
   return (
-    <div className="box-container bg-homestyle py-6 h-[100vh]">
-        <div className="w-full flex border border-gray-300 border-solid border-1px p-4 rounded-lg bg-[#FFFFFF]">
-          Abc
+    <div className="box-container bg-gray-100 h-[100vh]">
+      <h3 className="my-6 text-[#8B96A5] text-lg">Thông tin sản phẩm</h3>
+        <div className="w-full flex border border-gray-300 border-solid border-1px p-4 rounded-lg bg-white">
+          {id}
         </div>
     </div>
   )

@@ -58,8 +58,8 @@ function SectionMain() {
         <div className="col-span-1 flex flex-col">
           <div className="flex flex-col items-center rounded-lg bg-[#E3F0FF] h-2/3 px-4 py-1 mb-2">
             <div className="w-full h-full flex items-center justify-center p-2">
-              <div className="w-1/6 pt-2 flex justify-center rounded-full border border-[2px] bg-[#dde7f8] border-solid border-gray-300 mr-4">
-                <img className="w-[80%]" src="/avatar.svg" alt="" />
+              <div className="w-[50px] h-[50px] pt-2 flex justify-center rounded-full bg-[#dde7f8] border-secondary my-1 mr-4">
+                <Image className="w-full h-auto" width={44} height={44} src="/avatar.svg" alt="" />
               </div>
               <p className="">
                 Chào bạn!

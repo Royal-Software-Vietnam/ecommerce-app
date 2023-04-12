@@ -64,7 +64,7 @@ export default function SectionSale() {
         {listItems.map((item, index) => (
           <div
             key={index}
-            className="col-span-1 flex flex-col justify-center border-secondary items-center last:rounded-r-lg"
+            className="col-span-1 flex flex-col justify-center border-secondary items-center last:rounded-r-lg group hover:cursor-pointer"
             onClick={() =>
               route.push({
                 pathname: "/products/[id]",
@@ -72,10 +72,10 @@ export default function SectionSale() {
               })
             }
           >
-            <div className="w-[140px] h-[140px] flex items-center justify-center mb-2">
+            <div className="w-[140px] h-[140px] p-7 flex items-center justify-center mb-2 hover:-translate-y-4">
               <Image src={item.svg} width={101} height={121} alt="" priority />
             </div>
-            <h4 className="font-semibold">{item.title}</h4>
+            <h4 className="font-semibold mb-2">{item.title}</h4>
             <div className="flex py-1 justify-center w-[60px] bg-[#FFE3E3] rounded-xl">
               <span className="text-[#EB001B] text-[14px]">-25%</span>
             </div>

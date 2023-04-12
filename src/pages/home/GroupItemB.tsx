@@ -56,8 +56,9 @@ function GroupItemB() {
                 className="group-hover:contrast-125 hover:-translate-y-4"
                 src={item.svg}
                 alt=""
-                width="60"
-                height="70"
+                width={60}
+                height={70}
+                priority
               />
             </div>
           </div>

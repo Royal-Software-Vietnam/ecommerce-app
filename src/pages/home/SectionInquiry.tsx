@@ -23,9 +23,9 @@ export default function SectionInquiry() {
   }
 
   return (
-    <div className="box-container relative flex justify-center mt-6">
+    <div className="box-container h-[420px] relative flex justify-center mt-6">
       <Image
-        className="rounded-lg"
+        className="w-full h-auto rounded-lg"
         src={"/home-4.png"}
         width={1190}
         height={446}

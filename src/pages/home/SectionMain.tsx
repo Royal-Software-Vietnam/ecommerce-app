@@ -11,6 +11,8 @@ const listItems = [
   { name: "Đồ điện tử", path: "/store" },
   { name: "Công cụ", path: "/store" },
   { name: "Thể thao", path: "/store" },
+  { name: "Văn phòng", path: "/store" },
+  { name: "Du lịch", path: "/store" },
   { name: "Mẹ và bé", path: "/store" },
   { name: "Thú cưng", path: "/store" },
   { name: "Xem thêm", path: "/store" },
@@ -20,7 +22,7 @@ function SectionMain() {
   return (
     <div className="box-container">
       <SectionTitle title="Khám phá" />
-      <div className="w-full grid grid-cols-4 gap-6 border-secondary h-[400px] p-5 rounded-lg mb-6 bg-white">
+      <div className="w-full grid grid-cols-5 gap-6 border-secondary h-[400px] p-5 rounded-lg mb-6 bg-white">
         <div className="col-span-1 flex flex-col justify-between">
           <ul>
             {listItems.map((item, index) => (
@@ -36,13 +38,14 @@ function SectionMain() {
             ))}
           </ul>
         </div>
-        <div className="relative h-full container col-span-2 flex items-center">
+        <div className="relative h-full container col-span-3 flex items-center overflow-hidden">
           <Image
-            className="w-full"
-            width="664"
-            height="360"
-            src="/home-1.svg"
+            className="w-full h-auto"
+            width={784}
+            height={352}
+            src={"/banner-1.png"}
             alt=""
+            priority
           />
           <div className="absolute top-10 left-10">
             <h3 className="text-2xl  mb-2">Hàng mới về</h3>

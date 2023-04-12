@@ -39,19 +39,19 @@ export default function Header() {
 
       <div className="ml-[70px] right flex items-center space-x-[16px]">
         <div className="flex items-center flex-col">
-          <Image src={"/user.svg"} width={20} height={20} alt="" priority />
+          <Image className="w-[20px] h-auto" src={"/user.svg"} width={0} height={0} alt="" priority />
           <label className="hidden md:flex mt-[7px] text-[12px] leading-[15px] text-[#8B96A5]">Username</label>
         </div>
         <div className="hidden lg:flex items-center flex-col">
-          <Image src={"/cskh.svg"} width={20} height={20} alt="" priority />
+          <Image className="w-[20px] h-auto" src={"/cskh.svg"} width={0} height={0} alt="" priority />
           <label className="hidden md:flex mt-[7px] text-[12px] leading-[15px] text-[#8B96A5]">CSKH</label>
         </div>
         <div className="hidden lg:flex items-center flex-col">
-          <Image src={"/like.svg"} width={20} height={20} alt="" priority />
+          <Image className="w-[20px] h-auto" src={"/like.svg"} width={0} height={0} alt="" priority />
           <label className="hidden md:flex mt-[7px] text-[12px] leading-[15px] text-[#8B96A5]">Yêu thích</label>
         </div>
         <div className="flex items-center flex-col">
-          <Image src={"/cart.svg"} width={20} height={20} alt="" priority />
+          <Image className="w-[20px] h-auto" src={"/cart.svg"} width={0} height={0} alt="" priority />
           <label className="hidden md:flex mt-[7px] text-[12px] leading-[15px] text-[#8B96A5]">Giỏ hàng</label>
         </div>
       </div>
@@ -64,7 +64,7 @@ export default function Header() {
     </div>
     <div className="hidden md:flex px-[8%] h-[56px] w-full items-center space-x-10 border-primary">
       <div className="flex items-center space-x-2">
-        <Image src={"/menu.svg"} alt="" width={20} height={20} priority />
+        <Image className="w-[20px] h-auto" src={"/menu.svg"} alt="" width={0} height={0} priority />
         <p className="text-[16px] leading-[22px]">Tất cả</p>
       </div>
       <div className="flex items-center space-x-2">
